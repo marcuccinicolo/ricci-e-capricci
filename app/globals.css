@@ -26,6 +26,17 @@
   }
 }
 
+@layer utilities {
+  /* Scroll orizzontale pulito (gallery): nasconde la scrollbar */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 @layer components {
   .container-site {
     @apply mx-auto w-full max-w-content px-6 sm:px-10;

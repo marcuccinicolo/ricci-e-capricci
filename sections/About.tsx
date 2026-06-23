@@ -6,11 +6,11 @@ export default function About() {
   return (
     <section id="storia" className="bg-panna py-24 sm:py-32 lg:py-40">
       <div className="container-site grid items-center gap-12 lg:grid-cols-12 lg:gap-20">
-        {/* Immagine: un lavoro reale su capelli */}
+        {/* Immagine: mood del brand (milk_shake) */}
         <FadeIn className="lg:col-span-7" y={36}>
           <ZoomImage
             src={images.storia}
-            alt="Lavoro su capelli realizzato da Ricci & Capricci a Pietrasanta"
+            alt="Prodotti naturali milk_shake usati nel salone Ricci & Capricci"
             sizes="(max-width: 1024px) 100vw, 55vw"
             className="aspect-[4/5] w-full"
           />

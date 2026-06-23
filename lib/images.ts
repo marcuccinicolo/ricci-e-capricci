@@ -2,28 +2,32 @@
  * Manifest centrale delle immagini del sito (tutte foto reali del salone).
  *
  * GERARCHIA VISIVA:
- *   HERO    = interno reale del salone (autentico, accogliente)
- *   STORIA  = un lavoro reale su capelli (la cura, il mestiere)
- *   GALLERY = lavori reali su capelli (3 foto)
+ *   HERO    = interno reale del salone (atmosfera, accoglienza)
+ *   STORIA  = immagine "milk_shake" (mood del brand: elegante, caldo, premium)
+ *   GALLERY = tutti i lavori reali su capelli (scroll orizzontale)
  *
- * Per sostituire un'immagine basta cambiare il file in /public/images/
- * mantenendo lo stesso nome, oppure aggiornare il path qui sotto.
+ * Per aggiungere un lavoro futuro: metti il file in /public/images/ e
+ * aggiungi il path all'array `gallery` qui sotto.
  *
- * Immagini disponibili non usate (accenti opzionali per il futuro):
- *   /images/aesthetic.jpg, /images/milkshake-day.jpg, /images/milkshake-blond.jpg
+ * Immagini disponibili tenute come accenti opzionali per il futuro:
+ *   /images/milkshake-blond.jpg, /images/aesthetic.jpg
  */
 
 export const images = {
   // Hero: interno reale del salone.
   hero: "/images/interno-salone.jpg",
 
-  // Sezione "La nostra storia": un lavoro reale su capelli.
-  storia: "/images/capelli-ricci.jpg",
+  // Sezione "La nostra storia": immagine milk_shake (mood del brand).
+  storia: "/images/milkshake-day.jpg",
 
-  // Gallery "I nostri lavori": lavori reali su capelli.
+  // Gallery "I nostri lavori": tutti i lavori reali su capelli.
   gallery: [
-    "/images/capelli-mossi.jpg",
+    "/images/capelli-lunghi.jpg",
     "/images/capelli-castano.jpg",
     "/images/capelli-raccolto.jpg",
+    "/images/capelli-raccolto-ricci.jpg",
+    "/images/capelli-raccolto-biondo.jpg",
+    "/images/capelli-ricci.jpg",
+    "/images/capelli-mossi.jpg",
   ],
 } as const;
