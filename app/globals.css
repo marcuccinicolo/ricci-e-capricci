@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-panna text-inchiostro font-sans antialiased;
+    font-size: 17px; /* corpo leggermente più grande: leggibilità per tutte le età */
+    line-height: 1.7;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-serif;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background-color: theme("colors.sabbia");
+    color: theme("colors.inchiostro");
+  }
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto w-full max-w-content px-6 sm:px-10;
+  }
+
+  /* Etichetta piccola sopra ai titoli (eyebrow), usata con parsimonia */
+  .eyebrow {
+    @apply text-xs uppercase tracking-eyebrow text-oro;
+  }
+
+  /* Sistema forme: interattivi a pillola, superfici a spigolo vivo */
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-inchiostro px-8 py-4
+      text-sm font-medium uppercase tracking-wider text-panna transition-colors
+      duration-300 ease-soft hover:bg-fumo focus:outline-none
+      focus-visible:ring-2 focus-visible:ring-oro focus-visible:ring-offset-2
+      focus-visible:ring-offset-panna;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-full border border-panna/70
+      bg-panna/10 px-8 py-4 text-sm font-medium uppercase tracking-wider text-panna
+      backdrop-blur-sm transition-colors duration-300 ease-soft
+      hover:bg-panna hover:text-inchiostro focus:outline-none
+      focus-visible:ring-2 focus-visible:ring-panna;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center rounded-full border border-inchiostro/30
+      px-8 py-4 text-sm font-medium uppercase tracking-wider text-inchiostro
+      transition-colors duration-300 ease-soft hover:bg-inchiostro hover:text-panna
+      focus:outline-none focus-visible:ring-2 focus-visible:ring-oro;
+  }
+}
