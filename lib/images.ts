@@ -8,9 +8,6 @@
  *
  * Per aggiungere un lavoro futuro: metti il file in /public/images/ e
  * aggiungi il path all'array `gallery` qui sotto.
- *
- * Immagini disponibili tenute come accenti opzionali per il futuro:
- *   /images/milkshake-blond.jpg, /images/aesthetic.jpg
  */
 
 export const images = {

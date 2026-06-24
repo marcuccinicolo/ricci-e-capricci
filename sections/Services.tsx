@@ -38,8 +38,13 @@ export default function Services() {
         </FadeIn>
 
         <Stagger className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((service) => (
-            <StaggerItem key={service.name}>
+          {services.map((service, i) => (
+            <StaggerItem
+              key={service.name}
+              className={
+                i === services.length - 1 ? "sm:col-span-2 lg:col-span-1" : ""
+              }
+            >
               <div className="group h-full border border-terra/50 bg-panna p-8 transition-all duration-300 ease-soft hover:-translate-y-1 hover:border-oro hover:shadow-[0_18px_40px_-20px_rgba(33,30,26,0.35)]">
                 <h3 className="text-2xl font-medium text-inchiostro">
                   {service.name}

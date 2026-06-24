@@ -28,7 +28,7 @@ export default function Footer() {
 
         {/* Navigazione */}
         <nav aria-label="Footer">
-          <h4 className="text-xs uppercase tracking-wider text-oro">Naviga</h4>
+          <h4 className="eyebrow">Naviga</h4>
           <ul className="mt-4 space-y-2 text-sm text-panna/80">
             {links.map((link) => (
               <li key={link.href}>
@@ -42,7 +42,7 @@ export default function Footer() {
 
         {/* Contatti rapidi */}
         <div>
-          <h4 className="text-xs uppercase tracking-wider text-oro">Contatti</h4>
+          <h4 className="eyebrow">Contatti</h4>
           <address className="mt-4 space-y-2 not-italic text-sm text-panna/80">
             <p>
               {site.addressStreet}

@@ -1,7 +1,21 @@
 {
   "name": "ricci-e-capricci",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "description": "Landing page premium per Ricci & Capricci, salone di parrucchieri storico a Pietrasanta (Versilia). Next.js 14, TypeScript, Tailwind CSS, Framer Motion.",
+  "keywords": [
+    "nextjs",
+    "typescript",
+    "tailwindcss",
+    "framer-motion",
+    "landing-page",
+    "web-design",
+    "responsive",
+    "premium-design",
+    "portfolio"
+  ],
+  "author": "marcuccinicolo",
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -21,7 +21,7 @@ export default function Contact() {
             <div className="flex items-start gap-3">
               <MapPin className="mt-1 h-5 w-5 shrink-0 text-oro" />
               <div>
-                <dt className="text-xs uppercase tracking-wider text-oro">Dove siamo</dt>
+                <dt className="eyebrow">Dove siamo</dt>
                 <dd className="mt-1 text-panna/90">
                   {site.addressStreet}
                   <br />
@@ -34,7 +34,7 @@ export default function Contact() {
             <div className="flex items-start gap-3">
               <Phone className="mt-1 h-5 w-5 shrink-0 text-oro" />
               <div>
-                <dt className="text-xs uppercase tracking-wider text-oro">Telefono</dt>
+                <dt className="eyebrow">Telefono</dt>
                 <dd className="mt-1">
                   <a
                     href={site.phoneHref}

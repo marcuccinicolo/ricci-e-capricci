@@ -38,8 +38,8 @@ export default function About() {
               <dd className="mt-1 text-sm text-fumo">anni di esperienza</dd>
             </div>
             <div>
-              <dt className="font-serif text-4xl text-oro">Versilia</dt>
-              <dd className="mt-1 text-sm text-fumo">nel cuore di Pietrasanta</dd>
+              <dt className="font-serif text-4xl text-oro">Pietrasanta</dt>
+              <dd className="mt-1 text-sm text-fumo">nel cuore della Versilia</dd>
             </div>
           </dl>
         </FadeIn>
